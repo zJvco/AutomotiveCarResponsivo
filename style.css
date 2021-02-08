@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(img/carro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    padding: 15px;
+}
+
+/* Parte do Logo */
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 10px;
+    width: 40px;
+    height: 25px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 5px;
+    cursor: default;
+}
+
+/* Parte da navegação */
+.navBar {
+    width: 50%;
+}
+
+.navBar ul {
+    display: flex;
+}
+
+.navBar li {
+    list-style: none;
+    padding: 15px;
+}
+
+.navBar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.navBar a:hover {
+    color: #fff
+}
+
+.bookAppointment {
+    color: #fff;
+    background: #00c2ff;
+}
+
+/* Conteudo */
+.conteudo {
+    margin: 300px 350px;
+    width: auto;
+}
+
+.reparoCarro {
+    margin-bottom: 50px;
+}
+
+.reparoCarro h2 {
+    font-size: 4rem;
+    color: #00c2ff;
+}
+
+.reparoCarro p {
+    font-size: 1.8rem;
+    color: #ccc;
+}
+
+.botaoLivro a{
+    background-color: #00c2ff;
+    color: #ccc;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.botaoLivro a:hover {
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+}
+
+.contato {
+    height: 36px;
+    padding: 37px;
+    margin: auto 400px;
+}
+
+.contato ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato strong {
+    color: #00c2ff;
+}
+
+@media screen and (max-width: 1200px) {
+    /* Logo */
+    .logo {
+        height: 50px;
+        margin: 0 20px 20px 0;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 20px;
+    }
+
+    /* Navegação */
+    .navBar ul {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .navBar ul li {
+        text-align: center;
+    }
+
+    /* Conteudo */
+    .conteudo {
+        margin: 300px 60px;
+    }
+
+    .reparoCarro h2 {
+        font-size: 2.8rem;
+    }
+
+    .reparoCarro p {
+        font-size: 1.5rem;
+    }
+
+    .contato {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .contato strong {
+        font-size: 14px;
+    }
+
+    .contato p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .contato {
+        margin: 0;
+    }
+}
